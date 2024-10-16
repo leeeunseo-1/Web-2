@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 구조 실습</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: pink;
+            height: 100px;
+            width: auto;
+            position: relative;
+        }
+        
+        h2 {
+            font-size: 40px;
+            margin: 10px;
+            position: absolute;
+            top: 15px;
+        }
+
+        nav {
+            margin: 10px;
+            position: absolute;
+            top: 15px;
+            right: 40px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: palevioletred;
+            border-radius: 10px;
+        }
+
+        a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+        
+        .center {
+            display: flex;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        article {
+            border: 1px solid palevioletred;
+            margin: 10px;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: static;
+            bottom: 0;
+            right: 0;
+        }
+
+        footer > p {
+            font-size: 30px;
+            font-weight: 900;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Welcome To My Webpage</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        메뉴
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        메뉴
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        메뉴
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center">
+        <main>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <article>
+                <h3>제목</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+            </article>
+            <section></section>
+        </main>
+        <aside>
+            <h4>Right aside</h4>
+            <p>This is Aside / Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad fugit dolorum enim distinctio laborum? Et exercitationem accusamus rem eveniet labore delectus, expedita quo. Voluptate ipsum vitae corporis minus neque omnis?</p>
+            <input type="text" placeholder="이름 입력">
+            <input type="submit">
+            <h4>광고</h4>
+            <p>광고 내용</p>
+        </aside>
+    </div>
+    <footer>
+        <p>This is Footer</p>
+    </footer>
+</body>
+
+</html>
