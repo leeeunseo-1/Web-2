@@ -62,6 +62,7 @@
             nav,
             aside {
                 display: none;
+                /* transition을 이 곳에 적어도 적용이 안됌 */
             }
         }
 
@@ -179,17 +180,19 @@
                     reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
                     inventore libero officia voluptas hic.</p>
             </article>
-            <section></section>
+            <!-- <section></section>
+             사용할 계획 없어서 주석 처리 -->
         </main>
         <aside>
             <h4>Right aside</h4>
             <p>This is Aside / Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad fugit dolorum enim
                 distinctio laborum? Et exercitationem accusamus rem eveniet labore delectus, expedita quo. Voluptate
                 ipsum vitae corporis minus neque omnis?</p>
-            <form action="Temporary">
+            <form action="/Temporary">
                 <input type="text" placeholder="이름 입력">
                 <button type="submit" name="submit" class="submit">제출</button>
-                <!-- / -->
+                <!-- 제출했다가 뒤로 가기 버튼으로 다시 기본 페이지로 돌아왔을 때, 
+                input이 리셋되있으면 좋겠음 => 자바스크립으로 해야 하는 듯 -->
             </form>
             <h4>광고</h4>
             <p>광고 내용</p>
