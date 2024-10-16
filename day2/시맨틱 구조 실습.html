@@ -23,12 +23,13 @@
             width: auto;
             position: relative;
         }
-        
+
         h2 {
             font-size: 40px;
             margin: 10px;
             position: absolute;
             top: 15px;
+            white-space: nowrap;
         }
 
         nav {
@@ -55,9 +56,18 @@
             color: aliceblue;
             text-decoration: none;
         }
-        
+
+        @media screen and (max-width: 900px) {
+
+            nav,
+            aside {
+                display: none;
+            }
+        }
+
         .center {
             display: flex;
+            width: auto;
         }
 
         main {
@@ -75,18 +85,14 @@
         }
 
         footer {
-            width: 100%;
-            height: 200px;
+            min-height: 150px;
             background-color: pink;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: static;
-            bottom: 0;
-            right: 0;
         }
 
-        footer > p {
+        footer>p {
             font-size: 30px;
             font-weight: 900;
 
@@ -121,47 +127,70 @@
         <main>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <article>
                 <h3>제목</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit inventore libero officia voluptas hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio veritatis commodi quas eos, harum
+                    reprehenderit vero. Quia aliquam, quibusdam perferendis, minus necessitatibus dolorem beatae fugit
+                    inventore libero officia voluptas hic.</p>
             </article>
             <section></section>
         </main>
         <aside>
             <h4>Right aside</h4>
-            <p>This is Aside / Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad fugit dolorum enim distinctio laborum? Et exercitationem accusamus rem eveniet labore delectus, expedita quo. Voluptate ipsum vitae corporis minus neque omnis?</p>
-            <input type="text" placeholder="이름 입력">
-            <input type="submit">
+            <p>This is Aside / Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad fugit dolorum enim
+                distinctio laborum? Et exercitationem accusamus rem eveniet labore delectus, expedita quo. Voluptate
+                ipsum vitae corporis minus neque omnis?</p>
+            <form action="Temporary">
+                <input type="text" placeholder="이름 입력">
+                <button type="submit" name="submit" class="submit">제출</button>
+                <!-- / -->
+            </form>
             <h4>광고</h4>
             <p>광고 내용</p>
         </aside>
