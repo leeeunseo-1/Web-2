@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네모 박스가 네모네모 실습</title>
+    <style>
+        .animation_box {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            animation: moving_box 5s linear infinite;
+        }
+
+        @keyframes moving_box {
+            20% {
+                transform: translate(200px, 0);
+            }
+            
+            60% {
+                transform: translate(200px, 200px);
+            }
+
+            80% {
+                transform: translate(0, 200px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation_box"></div>
+</body>
+
+</html>

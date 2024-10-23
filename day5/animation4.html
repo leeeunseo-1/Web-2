@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계속 움직이는 글자</title>
+    <style>
+        * {
+            font-size: 100px;
+            font-weight: 900;
+        }
+        body {
+            background-color: thistle;
+        }
+        .ani_text {
+            width: max-content;
+            /* html 요소의 너비를 최대한 늘리고 싶을 때 사용
+            최대 너비는 안에 담고 있는 컨텐의 길이에 따라 좌우된다.
+            텍스트 컨텐츠의 경우 줄바꿈을 하지 않으면 문장의 길이가 길어진다.
+            자식요소가 부모요소를 빠져나가서 콘텐츠만큼의 영역을 차지하게 됨 */
+            animation: roll 20s linear infinite;
+        }
+        .ani2 {
+            top: 70%;
+            animation-direction: reverse;
+        }
+        @keyframes roll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ani_text">
+        <p> Anything is possible if you work hard
+            Anything is possible if you work hard
+            Anything is possible if you work hard</p>
+    </div>
+    <div class="ani_text ani2">
+        <p>Anything is possible if you work hard
+            Anything is possible if you work hard
+            Anything is possible if you work hard</p>
+    </div>
+</body>
+</html>
