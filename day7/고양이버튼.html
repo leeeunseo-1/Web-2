@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고양이 실습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            background-color: rgb(234, 255, 49);
+            padding: 10px 20px;
+            border-radius: 10px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10%;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .slider {
+            width: 1260px;
+            overflow: hidden;
+        }
+
+        ul {
+            display: flex;
+            width: calc(300px * 8 + 20px * 7);
+            margin: 0;
+            padding: 0;
+            transition: transform 1s ease;
+        }
+
+        input[type="checkbox"]:checked ~ .slider ul {
+            transform: translateX(-1260px);
+        }
+
+        li {
+            list-style: none;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+
+        li:nth-child(1) {
+            background: url('./1.jpg');
+        }
+
+        li:nth-child(2) {
+            background: url('./2.jpg');
+        }
+
+        li:nth-child(3) {
+            background: url('./3.jpg');
+        }
+
+        li:nth-child(4) {
+            background: url('./4.jpg');
+        }
+
+        li:nth-child(5) {
+            background: url('./5.jpg');
+        }
+
+        li:nth-child(6) {
+            background: url('./6.jpg');
+        }
+
+        li:nth-child(7) {
+            background: url('./7.jpg');
+        }
+
+        li:nth-child(8) {
+            background: url('./8.jpg');
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <input type="checkbox" id="cat">
+        <label for="cat">고양이가 지나가요</label>
+        
+        <div class="slider">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
